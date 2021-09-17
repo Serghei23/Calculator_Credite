@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator de credite</title>
+</head>
+<body>
+ <div class="flex-warper">
+     <div class="calculator-content">
+        <div class="calculator-content-title">
+            <h1>Grafic de rambursare</h1>
+        </div>
+        <div class="calculator-content-body">
+                    <div class="input-wrapper">
+                        <div class="title">Suma Creditului</div>
+                        <div class="input">
+                            <input type="number" id="total-cost" value="0">
+                        </div>
+                        <div class="input">
+                            <input type="range" min="1000" max="15000" id="total-cost-range" value="0" class="input-range">
+                        </div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <div class="title">Perioada</div>
+                        <div class="input">
+                            <input type="number" id="credit-term" value="0">
+                        </div>
+                        <div class="input">
+                            <input type="range" min="1" max="18" id="credit-term-range" value="0" class="input-range">
+                        </div>
+                    </div>
+                    <div class="final-result-item">
+                        <div class="title">Rata lunara</div>
+                        <div class="value" id="monthly-payment">0<span>Lei</span></div>
+                    </div>
+                </div>
+     </div>
+ </div>  
+ <script src="main.js"></script>   
+</body>
+</html>
